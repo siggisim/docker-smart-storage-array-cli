@@ -21,7 +21,9 @@ http_archive(
 )
 
 load("@io_bazel_rules_go//go:deps.bzl", "go_rules_dependencies", "go_register_toolchains")
+
 go_rules_dependencies()
+
 go_register_toolchains()
 
 load("@bazel_gazelle//:deps.bzl", "gazelle_dependencies", "go_repository")
@@ -30,7 +32,7 @@ gazelle_dependencies()
 
 go_repository(
     name = "com_github_prometheus_common",
-    commit = "2998b132700a7d019ff618c06a234b47c1f3f681",
+    commit = "d978bcb1309602d68bb4ba69cf3f8ed900e07308",
     importpath = "github.com/prometheus/common",
 )
 
